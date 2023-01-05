@@ -45,8 +45,16 @@ namespace Module_15._6_FinalTask_1
                 sb.Append(" ");
             }
             return sb.ToString().Split(Environment.NewLine.ToCharArray());
-            */
+            */          
         }
+        /*static string[] GetAllStudents(Classroom[] classes)
+        {
+            var oldStud = from student in classes // Пробегаюсь по классам со студентами
+                          from stud in student.Students // Добавляю студентов из всех классов
+                          select stud; // Включаю результат в выборку
+
+            return oldStud.ToArray(); // Возыращаю новый список студентов
+        }*/        
 
         public class Classroom
         {
